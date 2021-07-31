@@ -1,24 +1,18 @@
-# README
+# Command
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```sh
+# サーバ起動
+bin/rails s
 
-Things you may want to cover:
+# sqlite DB作成
+bin/rails db:create
 
-* Ruby version
+# migrate
+bin/rails db:migrate
 
-* System dependencies
+# scaffold
+bin/rails generate scaffold task content:text
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# ルーティング情報表示
+localhost:3000/rails/info/routes
+```
